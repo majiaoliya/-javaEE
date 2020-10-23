@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用js设置样式</title>
+
+    <style>
+        .cldiv {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            background: pink;
+        }
+        .input_class {
+            width : 400px;
+            border: 1px solid red;
+        }
+        .output_class {
+            width : 200px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="cldiv">
+        我是文字
+    </div>
+    <input type="text" name="noname" id="username"/>
+    <form action="#" id="form">
+         <select name="city" id="city">
+            <option value="1">广西</option>
+            <option value="2">广东</option>
+            <option value="3">湖北</option>
+        </select>
+        <input type="submit" value="提交"/>
+    </form>
+
+
+    <script>
+        var ele = document.getElementsByClassName("cldiv")[0];
+        ele.style.height = '400px';
+        var username = document.getElementById("username");
+        username.onfocus = function () { username.className = "input_class"; }
+        username.onblur = function () { username.className = "output_class"; }
+
+        var city = document.getElementById("city");
+        city.onchange = function (ev) { alert(this.value); }
+
+        var form = document.getElementById("form");
+        form.onsubmit = function (ev) {
+            if(username.value) { alert(username.value); return true; }
+            else alert("空的");
+            return false/*返回false阻止提交*/;
+        }
+    </script>
+</body>
+</html>

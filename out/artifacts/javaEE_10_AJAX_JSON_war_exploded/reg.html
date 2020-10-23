@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.8.3.js"></script>
+</head>
+<body>
+    name : <input type="text" id="name"> <br/>
+    pasw : <input type="text" id="pwd"> <br/>
+    <input type="button" id="btn" value="sub">
+    <script>
+        $("#btn").click( function () {
+
+            var obj = {"name" : $("#name").val(), "pwd" : $("#pwd").val() };
+            console.log(obj);
+            var json = JSON.stringify(obj);
+            $.ajax({
+                url:"/regst",
+                type:"POST",
+                data: {"user" : JSON.stringify(obj)},
+                success:function (data) {
+                    alert(data);
+                },
+                error:function () {
+                    alert("error")
+                },
+                dataType:"text"
+            });
+
+        })
+
+
+
+    </script>
+</body>
+</html>

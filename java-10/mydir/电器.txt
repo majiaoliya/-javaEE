@@ -1,0 +1,6 @@
+Product{name='电风扇', price=23.4, up=上架, gruop='电器'}
+Product{name='电灯', price=63.4, up=上架, gruop='电器'}
+Product{name='冰箱', price=300.4, up=不上架, gruop='电器'}
+Product{name='洗衣机', price=500.4, up=不上架, gruop='电器'}
+平均价格:221.89999999999998
+最高价格商品是 : Product{name='洗衣机', price=500.4, up=不上架, gruop='电器'}

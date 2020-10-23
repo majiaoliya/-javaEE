@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>今日重点</title>
+</head>
+<body>
+   <br/> <input type="button" value="按钮1" id="btn1">
+   <br/> <input type="button" value="按钮2" id="btn2">
+   <br/> <input type="button" value="按钮3" id="btn3">
+   <br/> <input type="text" name="username">
+   <br/> <input type="checkbox" name="hobby" value="1"> <span>篮球</span>
+   <br/> <input type="checkbox" name="hobby" value="2"> <span>足球</span>
+   <br/> <input type="checkbox" name="hobby" value="3"> <span>乒乓球</span>
+   <br/> <a>百度一下</a> <input type="button" value="添加" onclick="set_href()">
+    <script>
+        var btn2 = document.getElementById('btn2');
+        btn2.style.border = "3px solid red";
+
+        //获取所有input标签
+        var btns = document.getElementsByTagName("input");
+        for(var i=0; i<btns.length; i++)
+            btns[i].style.border = "1px solid green";
+
+        //通过name获取元素
+        var hobby = document.getElementsByName("hobby");
+        for (var i=0; i<hobby.length; i++) {
+            var value = hobby[i].value;
+        }
+
+        //
+        var p = 1;
+        function set_href() {
+            var a = document.getElementsByTagName("a")[0];
+            if(p) //setAttribute添加属性
+                a.setAttribute("href", "https://www.baidu.com/");
+            else //removeAttribute移除属性
+                a.removeAttribute("href");
+            p ^= 1;
+        }
+    </script>
+</body>
+
+</html>

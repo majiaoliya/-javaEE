@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom操作</title>
+</head>
+<body>
+    <samp id="myspan">我是span</samp>
+    <input id="btn" type="button" value="添加文字到span">
+    <script>
+        var ele = document.getElementById("myspan");
+        ele.innerText += "我不是span";
+        var btn = document.getElementById("btn");
+        var p = function (ev) {
+            ele.innerHTML += "<br/>哈哈" + "";
+        }
+        btn.onclick = p;
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>window对象</title>
+</head>
+<body>
+    <span id="myspan"> </span>
+    <button id="btn">停止</button>
+    <script>
+        // var b = confirm("你确定删除吗"); //阻塞的确定框
+        // if(b)
+        //     alert("yes");
+        // else
+        //     alert("no");
+        // window.open("http://www.baidu.com");
+        //
+        //定时器
+        
+        var todo = function () {
+            var ele = document.getElementById("myspan");
+            var str = location.href + '<br/>';
+            ele.innerHTML += str;
+        }
+        // var timeout = setTimeout(todo, 1000);
+        var timeout = setInterval(todo, 1000);
+        var btn = document.getElementById("btn");
+        btn.onclick = function (ev) { clearInterval(timeout); }
+        var length = window.history.length;
+        alert(length);
+    </script>
+</body>
+</html>

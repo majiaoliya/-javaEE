@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后代选择器</title>$
+    <style>
+        li {
+            list-style-type: none;
+        }
+        div p {
+            color: green;
+        }
+        input[type="text"] {
+            color: red;
+        }
+        div:hover {
+            color: red;
+            border: 1px solid red;
+            margin: 0px;
+            padding: 0px;
+        }
+        div:active {
+            border: 1px solid green;
+        }
+        body {
+            background-image: url("QQ图片20200920165616.jpg");
+        }
+    </style>
+
+</head>
+<body>
+
+    <ul>
+        <li>
+            <li>唐生</li>
+            <ul>
+                <li>孙悟空</li>
+                <li>猪八戒</li>
+                <li>沙僧</li>
+            </ul>
+        </li>
+    </ul>
+    <div><p>div里的p  五再远绿</p></div>
+    <p>div外的p </p>
+    <input type="text">
+</body>
+</html>

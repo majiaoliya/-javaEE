@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>今日重点dom节点操作</title>
+</head>
+
+<style>
+    .outer {
+        width: 200px;
+        height: 200px;
+        border : 1px solid red;
+    }
+    .inner {
+        width: 100px;
+        height: 100px;
+        border : 1px solid green;
+    }
+</style>
+
+<body>
+    <div class="outer">
+        <div class="inner">
+
+        </div>
+    </div>
+    <br/><input type="button" value="添加" onclick="addNode()"/>
+    <br/><input type="button" value="删除" onclick="delNode()"/>
+    <br/><input type="button" value="点击开始跳转计时" onclick="jump()"/>
+    <span id="sec">5</span> 秒后跳转
+    <script>
+        function addNode() {
+            var div_fa = document.getElementsByClassName("outer")[0];
+            var div = document.createElement("div");
+            div.className = "inner";
+            div_fa.appendChild(div);
+        }
+        function delNode() {
+            var div_fa = document.getElementsByClassName("outer")[0];
+            var chl = document.getElementsByClassName("inner")[0];
+            div_fa.removeChild(chl);
+        }
+        var count = 5;
+        function jump() {
+            if(count == 0) {
+                location.href = "https://www.baidu.com/";
+            } else {
+                document.getElementById("sec").innerText = --count;
+            }
+        }
+        setInterval(jump, 1000);
+    </script>
+
+</body>
+
+</html>

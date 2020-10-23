@@ -1,0 +1,3 @@
+Product{name='桌子', price=24.4, up=上架, gruop='家具'}
+平均价格:24.4
+最高价格商品是 : Product{name='桌子', price=24.4, up=上架, gruop='家具'}

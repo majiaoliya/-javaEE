@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+
+
+    </script>
+</head>
+<body>
+<ul id="city">
+    <li>北京</li>
+    <li>上海</li>
+    <li>天津</li>
+    <li>重庆</li>
+</ul>
+    <script>
+        var $city = $("#city li");
+        $city.each(function (index, element) {
+            var ele = element.innerText;
+            if (ele == "上海") {
+                return true; //continue ;
+                //    return false; //break
+            }
+            console.log(index + "-----" + element.innerText);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap模板</title>
+
+    <!-- 封装Bootstrap的css样式 -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <![endif]-->
+    <style>
+        div {
+            border: 0px solid red;
+        }
+        #sec_row_img {
+            border: 1px solid green;
+        }
+        #dao_hang_lan {
+            /*margin: 0px 0px;*/
+            /*padding: 0px 0px;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <img class="img-responsive" src="image/top_banner.jpg">
+        </div>
+        <div id="sec_row_img" class="row">
+            <img class="row col-md-1 img-responsive" src="image/icis.jpg">
+            <img class="row col-md-8 img-responsive" src="image/search.png">
+            <img class="row col-md-3 img-responsive" src="image/hotel_tel.png">
+        </div>
+        <div class="row">
+            <ul class="nav nav-tabs">
+                <li role="presentation"><a href="#">首页</a></li>
+                <li role="presentation"><a href="#">门票</a></li>
+                <li role="presentation"><a href="#">酒店</a></li>
+                <li role="presentation"><a href="#">香港车票</a></li>
+                <li role="presentation"><a href="#">出境游</a></li>
+                <li role="presentation"><a href="#">国内游</a></li>
+                <li role="presentation"><a href="#">港澳游</a></li>
+                <li role="presentation"><a href="#">自由定制</a></li>
+                <li role="presentation"><a href="#">全球</a></li>
+            </ul>
+        </div>
+
+        <!--轮播图-->
+        <div id="carousel-example-generic" class="row carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="image/banner_1.jpg" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="image/banner_2.jpg" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="image/banner_3.jpg" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-1">
+                <img src="image/icon_5.jpg" class="img-responsive">
+            </div>
+            <div class="col-md-1">
+                <span>精选</span>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-3">
+                <img src="image/jiangxuan_1.jpg" class="img-responsive">
+                <span>上海山崖的自由行</span>
+            </div>
+            <div class="col-md-3">
+                <img src="image/jiangxuan_1.jpg" class="img-responsive">
+                <span>上海山崖的自由行</span>
+            </div>
+            <div class="col-md-3">
+                <img src="image/jiangxuan_1.jpg" class="img-responsive">
+                <span>上海山崖的自由行</span>
+            </div>
+            <div class="col-md-3">
+                <img src="image/jiangxuan_1.jpg" class="img-responsive">
+                <span>上海山崖的自由行</span>
+            </div>
+        </div>
+
+
+        <div class="row col-md-12">
+            <div class="col-md-1">
+                <img src="image/icon_6.jpg" class="img-responsive">
+            </div>
+            <div class="col-md-1">
+                <span>国产精品</span>
+            </div>
+        </div>
+
+        <div class="row container-fluid">
+            <div class="row col-md-4">
+                <img src="image/guonei_1.jpg" class="img-responsive">
+            </div>
+            <div class="row col-md-8">
+                <div class="col-md-4">
+                    <img src="image/jiangxuan_2.jpg">
+                    <br/>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/jiangxuan_2.jpg">
+                </div>
+                <div class="col-md-4">
+                    <img src="image/jiangxuan_2.jpg">
+                </div>
+
+                <div class="col-md-4">
+                    <img src="image/jiangxuan_2.jpg">
+                </div>
+                <div class="col-md-4">
+                    <img src="image/jiangxuan_2.jpg">
+                </div>
+                <div class="col-md-4">
+                    <img src="image/jiangxuan_2.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-md-12">
+            <div class="col-md-1">
+                <img src="image/icon_7.jpg" class="img-responsive">
+            </div>
+            <div class="col-md-1">
+                <span>境外有</span>
+            </div>
+        </div>
+        <div class="row container-fluid">
+            <div class="row col-md-4">
+                <img src="image/jiangwai_1.jpg" class="img-responsive">
+            </div>
+            <div class="row col-md-8">
+                <div class="col-md-4">
+                    <img src="image/jiangxuan_3.jpg">
+                </div>
+                <div class="col-md-4">
+                    <img src="image/jiangxuan_3.jpg">
+                </div>
+                <div class="col-md-4">
+                    <img src="image/jiangxuan_3.jpg">
+                </div>
+
+                <div class="col-md-4">
+                    <img src="image/jiangxuan_3.jpg">
+                </div>
+                <div class="col-md-4">
+                    <img src="image/jiangxuan_3.jpg">
+                </div>
+                <div class="col-md-4">
+                    <img src="image/jiangxuan_3.jpg">
+                </div>
+            </div>
+        </div>
+        <div align="center">
+            <span class="">北京中软国际教育股份优先</span>
+            <br/>
+            <span class="">版权所有0x3f3f3f3f|=0x7f7f7f7f</span>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

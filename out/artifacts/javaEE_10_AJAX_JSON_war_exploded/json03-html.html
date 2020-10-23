@@ -1,0 +1,24 @@
+
+<html>
+<head>
+    <title></title>
+    <script src="js/jquery-1.8.3.js"></script>
+</head>
+<body>
+<form>
+    username : <input type="text" name="username" id="username"> <span id="showA"></span>
+</form>
+
+<script>
+    $(function () {
+        $("#username").blur(function () {
+            var username = $("#username").val();
+            $.post ("/login", "username="+username, function (data) {
+                    // alert(data.msg);
+                    $("#showA").text(data.msg);
+            }, "json");
+        });
+    })
+</script>
+</body>
+</html>

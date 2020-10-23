@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jquery-2.1.0.min.js"></script>
+</head>
+<body>
+    <button id="x"> 按钮</button>
+    <button id="y"> 按钮</button>
+    <script>
+        $(function () {
+           // #是id选择器
+           $("#x").click(function () {
+               alert("fuck");
+           });
+           $("#x").css("background-color", "red");
+           $("button").css("background-color", "green");
+
+           //并集选择器
+           $("#x,#y").css("background-color", "pink");
+
+           //层级选择器
+           /* $("father son") 选中father内的所有son  注意中间有空格   */
+           /* $("father > son") 选中father内的所有son  注意中间有大于号  */
+
+
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>省份</title>
+    <script src="js/jquery-3.3.1.js"></script>
+</head>
+<body>
+
+    省份 : <select name="prov" id="prov">
+        <option value="0">---请选择----</option>
+    </select>
+
+    <script>
+        $(function () {
+            $.get("getProv", function (data) {
+                alert(data);
+                $(data).each(function (index, item) {
+                    var ele = "<option value=\"0\">" + item.name + "</option>";
+                    $("#prov").append(ele);
+                });
+            }, "json");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+Product{name='苹果', price=23.4, up=上架, gruop='水果'}
+Product{name='火龙果', price=25.4, up=上架, gruop='水果'}
+Product{name='香蕉', price=25.4, up=上架, gruop='水果'}
+平均价格:24.73333333333333
+最高价格商品是 : Product{name='香蕉', price=25.4, up=上架, gruop='水果'}

@@ -1,0 +1,5 @@
+Product{name='生菜', price=2.3, up=不上架, gruop='蔬菜'}
+Product{name='萝卜', price=26.4, up=上架, gruop='蔬菜'}
+Product{name='大白菜', price=26.4, up=上架, gruop='蔬菜'}
+平均价格:18.366666666666664
+最高价格商品是 : Product{name='大白菜', price=26.4, up=上架, gruop='蔬菜'}

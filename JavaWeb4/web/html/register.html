@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        body {
+            background: url("../img/register_bg.png") no-repeat center center;
+        }
+
+        /* 设置大 div 的样式*/
+        .rg_layout {
+            width: 877px;
+            height: 517px;
+            border: 8px solid #eeeeee;
+            background-color: #fff;
+            margin:  22px auto;
+        }
+        .rg_left,.rg_center,.rg_right {
+            height: 514px;
+
+        }
+        .rg_left {
+            width: 209px;
+            float: left;
+            font-size: 18px;
+            font-family: "微软雅黑";
+            padding-top: 19px;
+            padding-left: 33px;
+        }
+        .rg_left p:first-child {
+            color: #ffcd63;
+        }
+        .rg_left p:last-child {
+            color: #a6a6a6;
+        }
+
+
+        .rg_center {
+            width: 480px;
+            float: left;
+        }
+
+        #username,#password,#email,#name,#tel,#birthday,#checkcode {
+            width: 254px;
+            height: 30px;
+            padding-left: 11px;
+            border: 1px solid #c9c9c9;
+            border-radius: 5px;
+        }
+        #checkcode {
+            width: 150px;
+        }
+        .td_left {
+            text-align: right;
+            width: 75px;
+            height: 40px;
+            font-size: 14px;
+            color: grey;
+
+        }
+        .td_right {
+            height: 40px;
+            width: 254px;
+            padding-left: 30px;
+
+        }
+        .rg_form {
+            padding-top: 50px;
+            padding-left: 20px;
+        }
+
+        .rg_right {
+            width: 170px;
+            float: right;
+            font-size: 12px;
+            padding-left: 33px;
+            padding-top:19px;
+        }
+        .rg_right p a {
+            color: red;
+        }
+
+        #img_check {
+            width: 80px;
+            vertical-align: middle;
+        }
+
+        #btn_sub {
+            background-color: #ffde65;
+            width: 118px;
+            height: 35px;
+            border: 1px solid #ffde65;
+        }
+    </style>
+</head>
+<body>
+<div class="rg_layout">
+
+    <div class="rg_left">
+        <p>新用户注册</p>
+        <p>USER REGISTER</p>
+    </div>
+
+    <div class="rg_center">
+        <div class="rg_form">
+            <!--定义表单 form-->
+            <form action="/web4/userLogin" method="post">
+                <table>
+                    <tr>
+                        <td class="td_left"><label for="username">用户名</label></td>
+                        <td class="td_right"><input type="text" name="username" id="username" placeholder="请输入用户名"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label for="password">密码</label></td>
+                        <td class="td_right"><input type="password" name="password" id="password" placeholder="请输入密码"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label for="email">Email</label></td>
+                        <td class="td_right"><input type="email" name="email" id="email" placeholder="请输入邮箱"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label for="name">姓名</label></td>
+                        <td class="td_right"><input type="text" name="name" id="name" placeholder="请输入姓名"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label for="tel">手机号</label></td>
+                        <td class="td_right"><input type="text" name="tel" id="tel" placeholder="请输入手机号"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label>性别</label></td>
+                        <td class="td_right">
+                            <input type="radio" name="gender" value="male"> 男
+                            <input type="radio" name="gender" value="female"> 女
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label for="birthday">出生日期</label></td>
+                        <td class="td_right"><input type="date" name="birthday" id="birthday" placeholder="请输入出生日期"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label for="checkcode" >验证码</label></td>
+                        <td class="td_right"><input type="text" name="checkcode" id="checkcode" placeholder="请输入验证码">
+                            <img id="img_check" src="../img/verify_code.jpg">
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td colspan="2" align="center"><input type="submit" id="btn_sub" value="注册"></td>
+
+                    </tr>
+
+                </table>
+
+            </form>
+        </div>
+     </div>
+
+    <div class="rg_right">
+        <p>已有账号?<a href="#">立即登录</a></p>
+    </div>
+
+</div>
+
+
+
+
+</body>
+</html>
